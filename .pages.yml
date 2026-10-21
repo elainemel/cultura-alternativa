@@ -1,0 +1,62 @@
+
+media:
+  input: media
+  output: /media
+
+content:
+  - name: posts
+    label: Artigos do Blog
+    type: collection
+    path: content/posts
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      fields: [title, date, category, published]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Título
+        type: string
+        required: true
+
+      - name: date
+        label: Data de publicação
+        type: date
+
+      - name: author
+        label: Autor
+        type: string
+
+      - name: category
+        label: Categoria
+        type: select
+        options:
+          values:
+            - Música
+            - Moda
+            - Arte
+            - Comportamento
+            - Identidade
+            - Cinema
+            - Cultura Alternativa
+
+      - name: description
+        label: Resumo
+        type: text
+
+      - name: image
+        label: Imagem de capa
+        type: image
+
+      - name: published
+        label: Publicado
+        type: boolean
+        default: false
+
+      - name: body
+        label: Conteúdo do artigo
+        type: rich-text
