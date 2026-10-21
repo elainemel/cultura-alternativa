@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cultura Alternativa | Além dos Rótulos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --roxo: #8732e8;
+      --preto: #08070c;
+      --branco: #ffffff;
+      --prata: #b8b8c3;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--preto);
+      color: var(--branco);
+      font-family: 'Open Sans', sans-serif;
+    }
+    header {
+      padding: 24px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #30263b;
+    }
+    .logo { font-weight: 800; letter-spacing: 2px; }
+    .logo span { color: var(--roxo); }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+    nav a:hover { color: #b989ff; }
+    .hero {
+      min-height: 75vh;
+      padding: 100px 8%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      background:
+        radial-gradient(ellipse at 85% 35%,
+          #532194 0%, #25103e 36%, transparent 70%),
+        var(--preto);
+    }
+    .eyebrow {
+      color: #c299ff;
+      font-size: 13px;
+      letter-spacing: 3px;
+    }
+    h1 {
+      max-width: 850px;
+      font-size: clamp(42px, 7vw, 90px);
+      line-height: 1.08;
+      margin: 20px 0;
+      letter-spacing: -2px;
+    }
+    h1 span { color: #ad73fb; }
+    .hero p {
+      max-width: 600px;
+      color: #d0cad8;
+      line-height: 1.8;
+    }
+    .botao {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 15px 27px;
+      background: linear-gradient(110deg,#8732e8,#54218b);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 5px;
+    }
+    section { padding: 70px 8%; }
+    section h2 { font-size: 32px; }
+    footer {
+      padding: 25px 8%;
+      color: var(--prata);
+      border-top: 1px solid #30263b;
+    }
+    @media (max-width: 650px) {
+      header { flex-direction: column; gap: 18px; }
+      nav { display: flex; flex-wrap: wrap; justify-content: center; }
+      nav a { margin: 5px 10px; }
+      .hero { padding: 65px 7%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CULTURA<span>.</span>ALTERNATIVA</div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#cultura">Cultura</a>
+      <a href="#documentario">Documentário</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="inicio">
+      <div class="eyebrow">IDENTIDADE • ARTE • EXPRESSÃO</div>
+      <h1>ALÉM DO VISUAL.<br><span>ALÉM DOS RÓTULOS.</span></h1>
+      <p>
+        Um espaço para conhecer a cultura alternativa
+        por quem realmente faz parte dela.
+        Histórias, vivências e formas de expressão
+        que desafiam estereótipos.
+      </p>
+      <a class="botao" href="#cultura">Explore esse universo →</a>
+    </div>
+
+    <section id="cultura">
+      <h2>Mais que uma estética.</h2>
+      <p>Cultura alternativa é identidade,
+      pertencimento, diversidade e liberdade de expressão.</p>
+    </section>
+
+    <section id="documentario">
+      <h2>Histórias além da aparência.</h2>
+      <p>Conheça nosso documentário em quatro episódios.</p>
+    </section>
+
+    <section id="sobre">
+      <h2>Um novo olhar.</h2>
+      <p>Este espaço valoriza as pessoas e as histórias
+      que fazem parte da cultura alternativa.</p>
+    </section>
+  </main>
+
+  <footer>
+    Cultura Alternativa © 2026
+  </footer>
+</body>
+</html>
