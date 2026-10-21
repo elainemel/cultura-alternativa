@@ -1,9 +1,7 @@
-ATUALIZAÇÃO VISUAL — CULTURA ALTERNATIVA
+NOCTIVIVIUM — ATUALIZAÇÃO DE IDENTIDADE
 
-Envie SOMENTE index.html e styles.css à raiz do repositório.
-Não substitua .pages.yml, netlify.toml, blog.11ty.js, post-pages.11ty.js ou content/posts/.
-O arquivo LEIA-ME.txt serve apenas de instrução; não precisa ser enviado.
+Envie os arquivos HTML, CSS e os dois arquivos .11ty.js deste pacote para a raiz do repositório. Substitua apenas os arquivos de mesmo nome. Não altere a pasta content/posts, .pages.yml, netlify.toml nem package.json.
 
-Esta versão melhora a página inicial com composição editorial, gradientes, cards e detalhes prateados, sem exigir imagens externas.
-Os banners reais do Drive devem ser selecionados e incorporados na próxima rodada.
-Licença Quivana Personal Use: confirmar uso público antes de incorporar.
+O nome Noctivivium é uma criação poética inspirada nas ideias latinas de noite e vida; não é uma palavra tradicional do latim.
+
+Confira as páginas e a lista do blog após publicar.
