@@ -1,142 +1,40 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cultura Alternativa | Além dos Rótulos</title>
+  <meta name="description" content="Um espaço independente sobre cultura alternativa, identidade, arte e expressão. Conheça histórias para além dos rótulos.">
+  <meta name="theme-color" content="#09080d">
+  <title>Cultura Alternativa — Além dos Rótulos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --roxo: #8732e8;
-      --preto: #08070c;
-      --branco: #ffffff;
-      --prata: #b8b8c3;
-    }
-
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: var(--preto);
-      color: var(--branco);
-      font-family: 'Open Sans', sans-serif;
-    }
-    header {
-      padding: 24px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #30263b;
-    }
-    .logo { font-weight: 800; letter-spacing: 2px; }
-    .logo span { color: var(--roxo); }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 14px;
-    }
-    nav a:hover { color: #b989ff; }
-    .hero {
-      min-height: 75vh;
-      padding: 100px 8%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      background:
-        radial-gradient(ellipse at 85% 35%,
-          #532194 0%, #25103e 36%, transparent 70%),
-        var(--preto);
-    }
-    .eyebrow {
-      color: #c299ff;
-      font-size: 13px;
-      letter-spacing: 3px;
-    }
-    h1 {
-      max-width: 850px;
-      font-size: clamp(42px, 7vw, 90px);
-      line-height: 1.08;
-      margin: 20px 0;
-      letter-spacing: -2px;
-    }
-    h1 span { color: #ad73fb; }
-    .hero p {
-      max-width: 600px;
-      color: #d0cad8;
-      line-height: 1.8;
-    }
-    .botao {
-      display: inline-block;
-      margin-top: 28px;
-      padding: 15px 27px;
-      background: linear-gradient(110deg,#8732e8,#54218b);
-      color: white;
-      text-decoration: none;
-      font-weight: 700;
-      border-radius: 5px;
-    }
-    section { padding: 70px 8%; }
-    section h2 { font-size: 32px; }
-    footer {
-      padding: 25px 8%;
-      color: var(--prata);
-      border-top: 1px solid #30263b;
-    }
-    @media (max-width: 650px) {
-      header { flex-direction: column; gap: 18px; }
-      nav { display: flex; flex-wrap: wrap; justify-content: center; }
-      nav a { margin: 5px 10px; }
-      .hero { padding: 65px 7%; }
-    }
+    :root {color-scheme:dark;--bg:#09080d;--panel:#14111d;--line:#302839;--purple:#8732e8;--light:#d6d0df;--silver:#aeb0bd;--white:#fff;}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:'Open Sans',sans-serif} a{color:inherit}button{font:inherit} .wrap{max-width:1200px;margin:auto;padding-left:24px;padding-right:24px}
+    .skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;padding:12px;background:#fff;color:#000;z-index:20}
+    .header{position:sticky;top:0;z-index:10;background:rgba(9,8,13,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{text-decoration:none;font-weight:800;letter-spacing:.11em;font-size:17px}.brand b{color:#ae72ff}.links{display:flex;gap:27px;align-items:center}.links a{text-decoration:none;font-size:13px;color:#e1dce7}.links a:hover,.links a:focus-visible{color:#bd8cff}.nav-cta{border:1px solid #8855be;padding:11px 16px;border-radius:4px}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 80% 38%,rgba(135,50,232,.44),transparent 48%),radial-gradient(ellipse at 20% 100%,rgba(71,29,119,.25),transparent 52%),#09080d;border-bottom:1px solid var(--line)}.hero:after{content:"";position:absolute;right:-130px;top:12%;width:450px;height:450px;border:1px solid rgba(185,133,255,.18);transform:rotate(34deg);border-radius:50%;pointer-events:none}.hero-inner{position:relative;z-index:1;padding-top:115px;padding-bottom:130px;max-width:1200px}.kicker{color:#bf90ff;letter-spacing:.3em;text-transform:uppercase;font-size:11px;font-weight:800}.hero h1{font-size:clamp(42px,7vw,94px);line-height:1.05;letter-spacing:-.055em;max-width:950px;margin:25px 0}.hero h1 em{font-style:normal;color:#bd8aff}.hero p{max-width:610px;line-height:1.85;color:#d1c9d9;font-size:16px}.actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 21px;border-radius:4px;text-decoration:none;font-size:13px;font-weight:800;transition:transform .2s}.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(110deg,#8732e8,#6030ad)}.secondary{border:1px solid #736280;background:rgba(0,0,0,.17)}
+    .section{padding-top:90px;padding-bottom:90px}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:32px}.eyebrow{color:#bc8cff;font-size:11px;text-transform:uppercase;letter-spacing:.22em;font-weight:800}h2{font-size:clamp(29px,4vw,48px);line-height:1.15;letter-spacing:-.04em;margin:12px 0}.intro{color:var(--light);line-height:1.9;max-width:760px}.subtle-link{color:#d2adff;font-size:13px;text-decoration:none}.subtle-link:hover{text-decoration:underline}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(155deg,#1b1426,#0e0c13);border:1px solid var(--line);border-radius:8px;overflow:hidden}.art{height:215px;display:flex;align-items:end;padding:22px;position:relative;background:radial-gradient(circle at 70% 30%,#7023b366,transparent 45%),linear-gradient(120deg,#171020,#38204c 65%,#101018)}.card:nth-child(2) .art{background:linear-gradient(145deg,#0b0b0e,#402352 50%,#171019)}.card:nth-child(3) .art{background:radial-gradient(ellipse at 25% 60%,#7235a14d,transparent 55%),linear-gradient(135deg,#211329,#09080d)}.art span{font-size:44px;color:#e8d9fa;font-weight:800;opacity:.65;letter-spacing:-.08em}.card-body{padding:23px}.card small{color:#b98aff;font-size:10px;text-transform:uppercase;letter-spacing:.13em}.card h3{font-size:20px;margin:11px 0}.card p{color:var(--light);font-size:13px;line-height:1.8;margin-bottom:0}
+    .documentary{background:linear-gradient(150deg,#130d1b,#09080d 65%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.doc-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.doc-visual{aspect-ratio:4/5;border:1px solid #604074;border-radius:8px;background:radial-gradient(ellipse at center,#5f2699 0%,#210f37 48%,#09080d 90%);display:flex;align-items:center;justify-content:center;text-align:center;padding:36px;box-shadow:0 20px 70px #0008}.doc-visual strong{font-size:clamp(30px,4vw,52px);line-height:1.1;letter-spacing:-.05em}.episodes{margin-top:24px;border-top:1px solid var(--line)}.episode{padding:16px 0;border-bottom:1px solid var(--line);display:flex;gap:20px;align-items:flex-start}.episode span{color:#b67aff;font-size:12px;font-weight:800}.episode div{font-size:14px;font-weight:700}.episode small{display:block;font-size:12px;font-weight:400;color:var(--silver);margin-top:5px;line-height:1.5}
+    .manifesto{text-align:center;padding-top:100px;padding-bottom:100px}.manifesto blockquote{max-width:860px;margin:10px auto 0;font-size:clamp(24px,4vw,42px);font-weight:800;letter-spacing:-.035em;line-height:1.35}.manifesto blockquote span{color:#b585ff}
+    .join{margin-bottom:80px;padding-top:62px;padding-bottom:62px;border:1px solid #553274;border-radius:10px;background:radial-gradient(ellipse at 85% 50%,#512377a3,transparent 48%),#15101e;display:flex;align-items:center;justify-content:space-between;gap:30px}.join p{color:var(--light);max-width:650px;line-height:1.8}.footer{border-top:1px solid var(--line);padding:30px 0;color:var(--silver);font-size:12px}.footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:800px){.nav{min-height:70px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}.links{gap:15px;flex-wrap:wrap}.hero-inner{padding-top:90px;padding-bottom:90px}.cards{grid-template-columns:1fr}.art{height:160px}.doc-grid{grid-template-columns:1fr;gap:30px}.doc-visual{aspect-ratio:16/10}.join{display:block}.section{padding-top:65px;padding-bottom:65px}}
+    @media(max-width:500px){.brand{font-size:14px}.links{gap:11px}.links a{font-size:12px}.nav-cta{padding:6px 9px}.hero h1{letter-spacing:-.06em}.section-head{display:block}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">CULTURA<span>.</span>ALTERNATIVA</div>
-    <nav>
-      <a href="#inicio">Início</a>
-      <a href="#cultura">Cultura</a>
-      <a href="#documentario">Documentário</a>
-      <a href="#sobre">Sobre</a>
-    </nav>
-  </header>
-
-  <main>
-    <div class="hero" id="inicio">
-      <div class="eyebrow">IDENTIDADE • ARTE • EXPRESSÃO</div>
-      <h1>ALÉM DO VISUAL.<br><span>ALÉM DOS RÓTULOS.</span></h1>
-      <p>
-        Um espaço para conhecer a cultura alternativa
-        por quem realmente faz parte dela.
-        Histórias, vivências e formas de expressão
-        que desafiam estereótipos.
-      </p>
-      <a class="botao" href="#cultura">Explore esse universo →</a>
-    </div>
-
-    <section id="cultura">
-      <h2>Mais que uma estética.</h2>
-      <p>Cultura alternativa é identidade,
-      pertencimento, diversidade e liberdade de expressão.</p>
-    </section>
-
-    <section id="documentario">
-      <h2>Histórias além da aparência.</h2>
-      <p>Conheça nosso documentário em quatro episódios.</p>
-    </section>
-
-    <section id="sobre">
-      <h2>Um novo olhar.</h2>
-      <p>Este espaço valoriza as pessoas e as histórias
-      que fazem parte da cultura alternativa.</p>
-    </section>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="header"><nav class="nav wrap" aria-label="Navegação principal"><a class="brand" href="#inicio">CULTURA<b>.</b>ALTERNATIVA</a><div class="links"><a href="#cultura">Cultura</a><a href="#documentario">Documentário</a><a href="#sobre">Sobre</a><a class="nav-cta" href="#acompanhe">Acompanhe</a></div></nav></header>
+  <main id="conteudo">
+    <section class="hero" id="inicio"><div class="hero-inner wrap"><div class="kicker">Identidade · arte · expressão</div><h1>ALÉM DO VISUAL.<br><em>ALÉM DOS RÓTULOS.</em></h1><p>Um espaço para conhecer a cultura alternativa por quem a vive. Histórias, referências e diferentes formas de expressão que desafiam estereótipos e ampliam olhares.</p><div class="actions"><a class="btn primary" href="#cultura">Explore a cultura ↗</a><a class="btn secondary" href="#documentario">Conheça o documentário →</a></div></div></section>
+    <section class="section wrap" id="cultura"><div class="section-head"><div><div class="eyebrow">Em pauta</div><h2>Mais que uma estética.</h2><p class="intro">A cena alternativa não cabe em uma única definição. Moda, música, arte, encontros e vivências compõem um universo plural — e são essas histórias que queremos colocar em primeiro plano.</p></div><span class="subtle-link">Blog em preparação</span></div><div class="cards"><article class="card"><div class="art" aria-hidden="true"><span>01 /</span></div><div class="card-body"><small>Identidade</small><h3>O que é ser alternativo?</h3><p>Pertencimento, escolhas e os significados que existem para além da aparência.</p></div></article><article class="card"><div class="art" aria-hidden="true"><span>02 /</span></div><div class="card-body"><small>Cultura & arte</small><h3>Expressões da cena</h3><p>Música, moda, movimentos e linguagens que fazem parte desse universo.</p></div></article><article class="card"><div class="art" aria-hidden="true"><span>03 /</span></div><div class="card-body"><small>Sociedade</small><h3>Além dos estereótipos</h3><p>Como surgem os julgamentos e por que ouvir quem vive essa realidade.</p></div></article></div></section>
+    <section class="section documentary" id="documentario"><div class="wrap doc-grid"><div class="doc-visual" role="img" aria-label="Espaço reservado para o cartaz oficial do documentário"><strong>HISTÓRIAS<br>ALÉM DA<br>APARÊNCIA.</strong></div><div><div class="eyebrow">Série documental · 4 episódios</div><h2>Por trás da cultura.</h2><p class="intro">Um documentário com linguagem próxima e dinâmica, que reúne vivências, entrevistas e reflexões para mostrar a cultura alternativa além dos rótulos.</p><div class="episodes"><div class="episode"><span>01</span><div>Por dentro da cultura<small>Identidades, características e expressões.</small></div></div><div class="episode"><span>02</span><div>Vozes da cena<small>Encontros, depoimentos e experiências reais.</small></div></div><div class="episode"><span>03</span><div>Moda e pertencimento<small>A relação da Obsidian com a comunidade alternativa.</small></div></div><div class="episode"><span>04</span><div>Um novo olhar<small>Reflexões que encerram a narrativa.</small></div></div></div><p style="font-size:12px;color:var(--silver);margin-top:18px">Títulos provisórios. Vídeos e materiais oficiais serão adicionados após aprovação do grupo.</p></div></div></section>
+    <section class="manifesto wrap" id="sobre"><div class="eyebrow">Nosso olhar</div><blockquote>Não se trata apenas de ser diferente. Trata-se de <span>ter liberdade para ser quem você é.</span></blockquote><p class="intro" style="margin:23px auto 0">Este projeto abre espaço para múltiplas vozes da cultura alternativa. A produção documental é realizada por estudantes de Comunicação Social do Uni-FACEF; os créditos completos serão apresentados aqui.</p></section>
+    <section class="join wrap" id="acompanhe"><div><div class="eyebrow">Faça parte</div><h2>Essa conversa continua.</h2><p>Em breve, você poderá acompanhar novos conteúdos, episódios e bastidores por aqui. O formulário de inscrição será ativado na próxima etapa, com informações sobre privacidade.</p></div><span class="btn secondary" aria-label="Cadastro em preparação">Cadastro em breve</span></section>
   </main>
-
-  <footer>
-    Cultura Alternativa © 2026
-  </footer>
+  <footer class="footer"><div class="wrap"><span>© 2026 Cultura Alternativa · Identidade, arte e expressão</span><span>Projeto editorial independente</span></div></footer>
 </body>
 </html>
