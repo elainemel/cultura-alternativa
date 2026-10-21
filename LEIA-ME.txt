@@ -1,0 +1,9 @@
+ATUALIZAÇÃO VISUAL — CULTURA ALTERNATIVA
+
+Envie SOMENTE index.html e styles.css à raiz do repositório.
+Não substitua .pages.yml, netlify.toml, blog.11ty.js, post-pages.11ty.js ou content/posts/.
+O arquivo LEIA-ME.txt serve apenas de instrução; não precisa ser enviado.
+
+Esta versão melhora a página inicial com composição editorial, gradientes, cards e detalhes prateados, sem exigir imagens externas.
+Os banners reais do Drive devem ser selecionados e incorporados na próxima rodada.
+Licença Quivana Personal Use: confirmar uso público antes de incorporar.

@@ -14,3 +14,52 @@
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
   
 .page-hero{padding:90px 0 60px;background:radial-gradient(ellipse at 80% 20%,#6c289355,transparent 55%);border-bottom:1px solid var(--line)}.page-hero h1{font-size:clamp(40px,7vw,76px);line-height:1.1;letter-spacing:-.055em;margin:20px 0}.page-hero p{max-width:720px;line-height:1.85;color:var(--light)}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.panel{border:1px solid var(--line);border-radius:8px;background:linear-gradient(135deg,#1b1425,#100d16);padding:28px}.panel h3{margin-top:10px}.panel p{color:var(--light);line-height:1.8}.tag{color:#c29aff;font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:800}.muted{color:var(--silver)}.post-meta{font-size:12px;color:var(--silver)}.prose{max-width:780px;line-height:1.95;color:#e2dce7}.prose h2{margin-top:45px}.form-container{max-width:640px}.field{display:flex;flex-direction:column;gap:7px;margin:20px 0}.field label{font-size:13px;font-weight:700}.field input{background:#120f19;color:white;border:1px solid #776486;padding:15px;border-radius:5px;font:inherit;width:100%}.field input:focus{outline:2px solid #b785ff}.consent{display:flex;gap:11px;align-items:flex-start;font-size:13px;line-height:1.6;color:var(--light);margin:18px 0}.consent input{accent-color:#8732e8;margin-top:5px}.submit-btn{border:0;cursor:pointer;color:white}.note{font-size:12px;color:var(--silver);line-height:1.8}.cta-link{color:#d2adff;text-underline-offset:4px}.episode-tile{display:flex;gap:20px;border-bottom:1px solid var(--line);padding:25px 0}.episode-num{font-size:36px;min-width:70px;color:#a66af8;font-weight:800;line-height:1}.episode-tile h3{margin:0 0 8px}.episode-tile p{color:var(--light);line-height:1.8;margin:0}.active{color:#caa3ff!important;text-decoration:underline!important;text-underline-offset:8px}.notice{border-left:3px solid #8732e8;padding:12px 18px;background:#251536;color:#ddd1eb;margin:28px 0}.footer a{color:#d1bcfa}.card a{text-decoration:none}.card a:hover h3{color:#c89aff}@media(max-width:700px){.grid2{grid-template-columns:1fr}.page-hero{padding:65px 0 40px}.panel{padding:20px}}
+/* ETAPA VISUAL — editorial preto, roxo e prata. Mantém o Eleventy e o Pages CMS intactos. */
+:root { --silver:#b6bac6; }
+.hero { isolation:isolate; min-height:680px;
+  background:
+    linear-gradient(90deg,#09080d 0%,rgba(9,8,13,.96) 32%,rgba(9,8,13,.35) 100%),
+    radial-gradient(ellipse at 79% 29%,#8732e8aa 0%,#30134a88 30%,transparent 61%),
+    #09080d;
+}
+.hero::before {content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;
+  opacity:.2;background:repeating-linear-gradient(110deg,transparent 0,transparent 57px,#ac85dd33 58px,#ac85dd33 59px);}
+.hero::after {right:-45px;top:9%;width:530px;height:530px;border:1px solid #d9b7ff30;box-shadow:0 0 0 66px #b98aff08,0 0 0 140px #a96af606}
+.hero-inner {min-height:680px;display:flex;flex-direction:column;justify-content:center}
+.hero h1 {max-width:1100px;font-weight:800;letter-spacing:-.072em;font-size:clamp(46px,7.4vw,104px)}
+.hero-outline {color:#fff;-webkit-text-stroke:1px #f1e7fc}
+.hero h1 em {color:#bd8aff;text-shadow:0 0 50px #8732e844}
+.hero-edition {color:#b5aebf;letter-spacing:.12em;margin-left:12px}
+.pulse-dot {display:inline-block;vertical-align:middle;width:7px;height:7px;border-radius:50%;background:#bd8aff;box-shadow:0 0 15px #bd8aff;margin-right:10px}
+.hero-side-label {position:absolute;bottom:30px;right:25px;color:#aca5b6;font-size:10px;letter-spacing:.22em;writing-mode:vertical-rl}
+.hero-orbit {position:absolute;right:4%;top:30%;width:245px;height:245px;border:1px solid #c08efa55;border-radius:50%;
+ display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;
+ transform:rotate(-12deg);color:#dbc6f5;font-size:10px;letter-spacing:.19em;pointer-events:none}
+.hero-orbit i {font-size:65px;font-style:normal;color:#d3b1ff;line-height:1}
+.statement-strip {border-block:1px solid #382b45;background:linear-gradient(90deg,#100b17,#211130,#0f0b15)}
+.statement-strip .wrap {min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#ddd4e8;font-size:11px;letter-spacing:.19em;font-weight:800}
+.strip-symbol {color:#a85efb;font-size:21px}
+.section-head h2 {max-width:770px}
+.card {transition:transform .2s,border-color .2s}
+.card:hover {transform:translateY(-5px);border-color:#7847a5}
+.card .art {height:238px;align-items:flex-end;overflow:hidden}
+.card .art::before {content:"";position:absolute;inset:-60%;opacity:.45;transform:rotate(30deg);
+ background:linear-gradient(95deg,transparent 25%,#8732e850 49%,transparent 57%);}
+.card .art::after {content:"✳";position:absolute;right:18px;top:10px;font-size:96px;line-height:1;color:#a581d91e}
+.card .art span {font-size:12px;font-weight:800;letter-spacing:.14em;opacity:.95}
+.art-identity {background:radial-gradient(circle at 75% 42%,#7632b170,transparent 35%),linear-gradient(135deg,#151020,#412253,#0b0910)!important}
+.art-art {background:radial-gradient(circle at 20% 60%,#9b3be85c,transparent 40%),linear-gradient(115deg,#09080d,#291537,#0c0b10)!important}
+.art-society {background:radial-gradient(circle at 70% 70%,#6423b26e,transparent 40%),linear-gradient(160deg,#1a1025,#09080d)!important}
+.documentary .doc-visual {position:relative;isolation:isolate;overflow:hidden;box-shadow:0 26px 75px #0009}
+.documentary .doc-visual::before {content:"";position:absolute;inset:0;z-index:-1;background:repeating-linear-gradient(0deg,transparent 0,transparent 11px,#ffffff05 12px,#ffffff05 13px)}
+.documentary .doc-visual strong {text-shadow:0 8px 28px #0006}
+.manifesto {position:relative}
+.manifesto::before {content:"✳";position:absolute;z-index:-1;left:6%;top:18%;font-size:170px;color:#8732e810;line-height:1}
+a:focus-visible {outline:2px solid #be8cff;outline-offset:5px}
+@media(max-width:900px){.hero-orbit{opacity:.3;right:-90px}.hero h1{max-width:760px}}
+@media(max-width:620px){.hero,.hero-inner{min-height:610px}.hero-inner{padding-top:85px;padding-bottom:100px}.hero-orbit{display:none}
+  .hero-side-label{display:none}.hero-edition{display:none}.statement-strip .wrap{flex-wrap:wrap;justify-content:center;padding:18px 12px;min-height:60px;font-size:9px}
+  .statement-strip .strip-symbol:last-of-type,.statement-strip span:last-child{display:none}
+  .card .art{height:170px}.hero h1{font-size:clamp(39px,11vw,62px)}
+}
+@media(prefers-reduced-motion:reduce){.card{transition:none}}
