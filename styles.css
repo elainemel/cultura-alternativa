@@ -71,3 +71,43 @@ a:focus-visible {outline:2px solid #be8cff;outline-offset:5px}
 section{scroll-margin-top:88px}.documentary{overflow:hidden}.doc-grid>div{min-width:0}.documentary .doc-visual{min-width:0}
 @media(max-width:700px){.nav{gap:12px}.brand{font-size:15px;letter-spacing:.025em}.links{gap:10px;flex-wrap:wrap;justify-content:flex-end}.links a{font-size:11px}.nav-cta{padding:8px 10px}.doc-grid{display:flex;flex-direction:column}.documentary .doc-visual{width:100%;max-width:520px}}
 @media(max-width:450px){.nav{flex-direction:column;justify-content:center;padding:14px 0}.links{justify-content:center}.header{position:relative}.hero-side-label{display:none}}
+
+
+/* ETAPA 12 — Identidade tipográfica e navegação responsiva */
+.hero-brand-name {
+  font-size:clamp(17px,2.3vw,31px);
+  font-weight:800;
+  letter-spacing:.18em;
+  color:#f4effb;
+  margin:0 0 28px;
+  line-height:1.2;
+}
+.hero-brand-name > span:first-child {color:#bf95ff}
+.hero-brand-star {color:#b9a4d2;font-size:.78em;margin-left:16px;vertical-align:middle}
+.hero h1 {margin-top:10px}
+.header {isolation:isolate}
+.nav {flex-wrap:nowrap}
+.links {min-width:0}
+.links a {white-space:nowrap}
+.documentary .doc-grid {align-items:center}
+.documentary .doc-grid > div:last-child {position:relative;z-index:1}
+.documentary .doc-grid > div:last-child h2 {overflow-wrap:break-word}
+@media (max-width:960px) {
+  .nav {flex-wrap:wrap;justify-content:center;gap:12px;padding-top:18px;padding-bottom:18px}
+  .links {width:100%;justify-content:center;flex-wrap:wrap;row-gap:15px}
+}
+@media (max-width:700px) {
+  .hero-brand-name{font-size:clamp(15px,4vw,24px)}
+  .hero-brand-star{margin-left:7px}
+  .hero h1{font-size:clamp(38px,9vw,64px)}
+  .documentary .doc-grid{gap:32px}
+}
+@media(max-width:450px) {
+  .header{position:sticky;top:0}
+  .nav{padding:12px 0}
+  .brand{font-size:16px}
+  .links{gap:8px 13px}
+  .links a{font-size:11px}
+  .nav-cta{padding:7px 10px}
+  .hero-brand-name{letter-spacing:.08em}
+}
