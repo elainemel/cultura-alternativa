@@ -4,7 +4,7 @@ date: 2026-10-22
 author: "Equipe Noctivivium"
 category: "Comportamento"
 description: "Por que ouvir as pessoas é mais importante do que julgá-las pela aparência."
-image: ""
+image: "/editorial/capa-pertencimento.webp"
 published: true
 ---
 

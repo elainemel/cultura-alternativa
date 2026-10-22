@@ -4,7 +4,7 @@ date: 2026-10-22
 author: "Equipe Noctivivium"
 category: "Moda"
 description: "Da customização às referências góticas e punk, o vestuário pode ser expressão pessoal e cultural."
-image: ""
+image: "/editorial/capa-moda.webp"
 published: true
 ---
 

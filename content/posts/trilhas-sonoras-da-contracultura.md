@@ -4,7 +4,7 @@ date: 2026-10-22
 author: "Equipe Noctivivium"
 category: "Música"
 description: "Rock, punk, metal e outras sonoridades ajudam a criar vínculos e espaços de expressão."
-image: ""
+image: "/editorial/capa-musica.webp"
 published: true
 ---
 

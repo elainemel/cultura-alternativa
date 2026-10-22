@@ -4,7 +4,7 @@ date: 2026-10-22
 author: "Equipe Noctivivium"
 category: "Identidade"
 description: "Por que a cultura alternativa não cabe em uma única aparência ou definição."
-image: ""
+image: "/editorial/capa-identidade.webp"
 published: true
 ---
 
