@@ -111,3 +111,38 @@ section{scroll-margin-top:88px}.documentary{overflow:hidden}.doc-grid>div{min-wi
   .nav-cta{padding:7px 10px}
   .hero-brand-name{letter-spacing:.08em}
 }
+
+
+/* ETAPA 13 — Composição fotográfica opcional com arquivos reais do projeto.
+   banner-noctivivium.png e cartaz-documentario.png são arquivos locais.
+   Sem eles, o layout abstrato anterior permanece funcionando. */
+.hero-photo {
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background-image:linear-gradient(90deg,#09080dfc 0%,#09080de5 35%,#09080d74 75%,#09080d55 100%),url("banner-noctivivium.png");
+  background-size:cover;
+  background-position:center;
+  opacity:.92;
+  mix-blend-mode:normal;
+}
+.hero-inner{z-index:2}
+.hero::before{z-index:1}
+.hero::after{z-index:1}
+.documentary .doc-visual{
+ background-image:linear-gradient(0deg,#09080dd9,#20112f77),url("cartaz-documentario.png");
+ background-size:cover;
+ background-position:center;
+}
+.documentary .doc-visual strong{
+ background:#09080d6b;
+ padding:16px;
+ border-radius:6px;
+}
+@media(max-width:620px){
+ .hero-photo{
+  background-image:linear-gradient(90deg,#09080df0,#09080dc9),url("banner-noctivivium.png");
+  background-position:60% center;
+ }
+}
