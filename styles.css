@@ -146,3 +146,20 @@ section{scroll-margin-top:88px}.documentary{overflow:hidden}.doc-grid>div{min-wi
   background-position:60% center;
  }
 }
+
+/* Identidade revisada: nome protagonista, slogan menor e cartaz próprio */
+.hero {position:relative;isolation:isolate;min-height:700px}
+.hero-photo {background-image:linear-gradient(90deg,rgba(6,4,10,.72),rgba(6,4,10,.42) 53%,rgba(6,4,10,.07)),url("banner-noctivivium.webp"); background-position:center center;background-size:cover;opacity:1}
+.hero-inner {align-items:center;text-align:center;position:relative;z-index:3;min-height:700px;justify-content:center}
+.hero .kicker{margin-bottom:20px}
+.hero-brand-name{color:#fff;font-size:clamp(44px,8.4vw,122px);letter-spacing:-.045em;line-height:1.04;margin:6px 0 24px;font-weight:800;text-shadow:0 7px 45px #000,0 3px 20px #000}
+.hero-brand-name span {color:#cc9bff}
+.hero-slogan{font-size:clamp(20px,3vw,38px)!important;line-height:1.25!important;letter-spacing:-.02em!important;font-weight:700!important;color:#fff!important;margin:0 0 18px!important;max-width:100%!important}
+.hero-slogan span{color:#d3aeff}
+.hero-inner > p:not(.hero-slogan){max-width:690px;margin-left:auto;margin-right:auto;text-shadow:0 3px 12px #000}
+.hero .actions{justify-content:center}
+.hero::after,.hero::before{display:none}
+.documentary .doc-visual{padding:0!important;background:none!important;display:block!important;min-height:0!important;overflow:hidden}
+.documentary .doc-visual::before {display:none}
+.documentary-poster{display:block;width:100%;max-height:570px;object-fit:contain;object-position:center;background:#08060c}
+@media(max-width:680px){.hero,.hero-inner{min-height:620px}.hero-photo{background-position:64% center;background-image:linear-gradient(90deg,rgba(6,4,10,.78),rgba(6,4,10,.5)),url("banner-noctivivium.webp")}.hero-brand-name{font-size:clamp(38px,10.2vw,70px);overflow-wrap:anywhere}.hero-slogan{font-size:clamp(18px,4.4vw,25px)!important}.documentary-poster{max-height:480px}}
