@@ -219,3 +219,11 @@ section{scroll-margin-top:88px}.documentary{overflow:hidden}.doc-grid>div{min-wi
 .post-body p{color:#ccc1d5;font-size:14px;line-height:1.75;flex:1}
 .post-body .cta-link{margin-top:12px}
 @media(max-width:720px){.grid2:has(.editorial-post){grid-template-columns:1fr}.post-art{height:180px}}
+
+/* CAPAS E GALERIA — FOTOGRAFIAS DO PROJETO */
+.post-art{overflow:hidden}.post-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.75);transition:transform .3s;z-index:-1}.post-art:hover img{transform:scale(1.035)}
+.post-art:has(img)::after{display:none}.post-art:has(img)::before{background:linear-gradient(0deg,#08060dcc,transparent 75%);opacity:1;inset:0}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.gallery-item{margin:0;background:#130d1b;border:1px solid #352644;border-radius:12px;overflow:hidden}.gallery-item img{width:100%;aspect-ratio:1;object-fit:cover;display:block;transition:transform .2s}.gallery-item img:hover{transform:scale(1.025)}.gallery-item figcaption{padding:12px 15px;font-size:13px;color:#cdc3d8}
+.team-card img{width:140px!important;height:140px!important;aspect-ratio:1!important;object-fit:cover!important;object-position:center 25%!important;display:block;margin:auto;border-radius:50%}
+.pilot-preview{max-width:880px;margin:30px auto}.pilot-preview img{width:100%;height:auto;border-radius:10px;border:1px solid #4e3564}.pilot-preview figcaption{color:#baadca;font-size:13px;margin-top:10px}
+@media(max-width:720px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.team-card img{width:106px!important;height:106px!important}}@media(max-width:440px){.gallery-grid{grid-template-columns:1fr}}
