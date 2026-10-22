@@ -11,6 +11,10 @@ module.exports = function(eleventyConfig) {
   for (const name of publicFiles) {
     if (fs.existsSync(name)) eleventyConfig.addPassthroughCopy(name);
   }
+  // Fotografias dos oito integrantes adicionadas na pasta raiz.
+  for (const name of fs.readdirSync('.').filter(file => /^equipe-[a-z]+\.webp$/i.test(file))) {
+    eleventyConfig.addPassthroughCopy(name);
+  }
   if (fs.existsSync("media")) eleventyConfig.addPassthroughCopy("media");
 
   // Manter a colecao do blog: somente artigos publicados.
