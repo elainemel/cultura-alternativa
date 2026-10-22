@@ -5,7 +5,7 @@ author: Equipe editorial
 category: Cultura Alternativa
 description: Uma reflexão sobre identidade, expressão e pertencimento para além
   dos estereótipos.
-published: true
+published: false
 ---
 # Cultura alternativa: muito além da estética
 
