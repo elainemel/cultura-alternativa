@@ -16,6 +16,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy(name);
   }
   if (fs.existsSync("editorial")) eleventyConfig.addPassthroughCopy("editorial");
+  if (fs.existsSync("galeria-fotos")) eleventyConfig.addPassthroughCopy("galeria-fotos");
   if (fs.existsSync("media")) eleventyConfig.addPassthroughCopy("media");
 
   // Manter a colecao do blog: somente artigos publicados.
