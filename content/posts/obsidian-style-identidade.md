@@ -24,4 +24,4 @@ A Obsidian Style participa da narrativa de **Vozes da Noite**, projeto audiovisu
 
 ## Para conhecer mais
 
-Conheça a [Obsidian Style no Instagram](https://www.instagram.com/obsidianstyleoficial/) e acompanhe os conteúdos de **Vozes da Noite** na página de documentário do Noctivivium.
+Conheça a [loja oficial da Obsidian Style](https://www.obsidianstyle.com) e acompanhe a marca no [Instagram @obsidianstyleoficial](https://www.instagram.com/obsidianstyleoficial/). Para saber mais sobre a produção, visite a página **Documentário** do Noctivivium.
