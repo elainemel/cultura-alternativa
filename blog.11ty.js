@@ -8,8 +8,10 @@ class Blog {
     const cards = posts.length ? posts.map(post => {
       const d = post.data;
       const url = `/artigos/${post.fileSlug}/`;
-      return `<article class="panel"><div class="tag">${escape(d.category || 'Cultura alternativa')}</div><h2>${escape(d.title)}</h2><p>${escape(d.description || '')}</p><a class="cta-link" href="${url}">Ler artigo →</a></article>`;
-    }).join('') : '<div class="panel"><h2>Novidades em breve</h2><p>Estamos preparando os primeiros artigos. Acompanhe a página para descobrir novas histórias.</p></div>';
+      const themes = ['identity','fashion','music','community'];
+      const idx = posts.indexOf(post);
+      return `<article class="panel editorial-post"><a class="post-art post-art-${themes[idx % themes.length]}" href="${url}" aria-label="Ler ${escape(d.title)}"><span>${escape(d.category || 'Cultura alternativa')}</span></a><div class="post-body"><div class="tag">${escape(d.category || 'Cultura alternativa')}</div><h2>${escape(d.title)}</h2><p>${escape(d.description || '')}</p><a class="cta-link" href="${url}">Ler artigo →</a></div></article>`;
+    }).join('') : '';
     return shell.replace(/<div class="grid2">[\s\S]*?<\/div><\/section>/, `<div class="grid2">${cards}</div></section>`);
   }
 }

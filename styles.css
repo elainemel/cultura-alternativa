@@ -202,3 +202,20 @@ section{scroll-margin-top:88px}.documentary{overflow:hidden}.doc-grid>div{min-wi
 .team-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;margin:0 0 72px}.team-card{text-align:center;border:1px solid #413149;background:linear-gradient(160deg,#171020,#0c0a11);border-radius:12px;padding:24px 12px}.team-card img{width:min(100%,145px);height:auto;aspect-ratio:1;object-fit:cover;border-radius:50%;border:2px solid #725393}.team-card h3{font-size:14px;line-height:1.45;margin:16px 0 5px;overflow-wrap:anywhere}.team-card p{font-size:12px;color:#caaaf4;line-height:1.5;margin:0}
 @media(max-width:900px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.doc-feature{gap:28px}}
 @media(max-width:670px){.hero-inner{padding-top:60px!important;padding-bottom:60px!important}.hero .hero-brand-name{font-size:clamp(36px,10vw,56px)!important}.hero-photo{background-position:60% center!important;background-image:linear-gradient(90deg,#09080dbd,#09080d6f),url("banner-noctivium.png")!important}.doc-feature{grid-template-columns:1fr}.doc-feature img{max-width:300px;margin:auto}.doc-grid{grid-template-columns:1fr}.episode-card{flex-wrap:wrap}.status-pill{margin-left:80px}.team-grid{gap:12px}.team-card{padding:16px 8px}.team-card img{width:min(100%,115px)}}
+
+/* NOCTIVIVIUM: cards editoriais do blog */
+.grid2:has(.editorial-post){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}
+.editorial-post{padding:0!important;overflow:hidden;display:flex;flex-direction:column}
+.post-art{height:230px;display:flex;align-items:flex-end;padding:23px;background:#261237;position:relative;text-decoration:none;isolation:isolate;border-bottom:1px solid #50336b}
+.post-art::before{position:absolute;content:"";inset:0;z-index:-1;background:repeating-linear-gradient(120deg,transparent 0 34px,#ffffff0c 35px 36px);opacity:.55}
+.post-art::after{content:"✳";position:absolute;right:25px;top:15px;color:#f5e8ff29;font-size:130px;line-height:1}
+.post-art span{color:#e7d7f4;font-size:11px;letter-spacing:.17em;text-transform:uppercase;font-weight:800}
+.post-art-identity{background:radial-gradient(circle at 70% 35%,#8732e8b3,transparent 54%),linear-gradient(130deg,#0d0913,#392251)}
+.post-art-fashion{background:radial-gradient(circle at 24% 26%,#9f56f477,transparent 60%),linear-gradient(30deg,#15101a,#392147)}
+.post-art-music{background:radial-gradient(circle at 12% 90%,#7523d6b3,transparent 48%),linear-gradient(150deg,#07070d,#351b4d)}
+.post-art-community{background:radial-gradient(circle at 78% 85%,#9f69f687,transparent 52%),linear-gradient(90deg,#12101a,#2a123e)}
+.post-body{padding:24px 26px 28px;display:flex;flex-direction:column;flex:1}
+.post-body h2{font-size:clamp(19px,2.2vw,27px);line-height:1.25;margin:10px 0}
+.post-body p{color:#ccc1d5;font-size:14px;line-height:1.75;flex:1}
+.post-body .cta-link{margin-top:12px}
+@media(max-width:720px){.grid2:has(.editorial-post){grid-template-columns:1fr}.post-art{height:180px}}
