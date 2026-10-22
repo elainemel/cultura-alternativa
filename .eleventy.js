@@ -23,7 +23,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("publicados", function(api) {
     return api.getFilteredByGlob("content/posts/**/*.md")
       .filter(item => item.data.published === true)
-      .sort((a, b) => new Date(b.data.date || 0) - new Date(a.data.date || 0));
+      .sort((a, b) => {
+        const featured = item => item.fileSlug === "obsidian-style-identidade" ? 0 : 1;
+        if (featured(a) !== featured(b)) return featured(a) - featured(b);
+        const byDate = new Date(b.data.date || 0) - new Date(a.data.date || 0);
+        return byDate || String(a.data.title || "").localeCompare(String(b.data.title || ""), "pt-BR");
+      });
   });
   return {
     dir: { input: ".", output: "_site" },
