@@ -275,3 +275,21 @@ section{scroll-margin-top:88px}.documentary{overflow:hidden}.doc-grid>div{min-wi
 @media(max-width:1120px){.nav{flex-wrap:wrap;justify-content:center;gap:12px;padding-top:14px;padding-bottom:14px}.nav .links{justify-content:center}.nav .social-links{margin-left:8px}}
 @media(max-width:700px){.nav .social-links{width:100%;justify-content:center;margin:0}.nav .social-links a{width:38px;height:38px}.footer .social-links{margin-left:0;width:100%;justify-content:center}}
 @media(prefers-reduced-motion:reduce){.social-links a{transition:none}}
+
+/* Carrossel de artigos na página inicial */
+.blog-carousel{min-width:0}
+.blog-carousel-controls{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;gap:16px}
+.blog-carousel-count{font-size:12px;color:#d0bcdf;letter-spacing:.06em}
+.blog-carousel-actions{display:flex;gap:10px}
+.carousel-arrow{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;border:1px solid #765597;background:#22152e;color:#f1e4ff;font-size:28px;line-height:1;cursor:pointer}
+.carousel-arrow:hover:not(:disabled),.carousel-arrow:focus-visible{background:#633196;border-color:#c192fd}
+.carousel-arrow:disabled{opacity:.32;cursor:default}
+.blog-carousel-track{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 36px)/3);gap:18px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-left:2px;scrollbar-width:thin;scrollbar-color:#6b478a transparent;padding:2px 2px 16px}
+.blog-carousel-track .carousel-card{min-width:0;scroll-snap-align:start;display:flex;flex-direction:column}
+.blog-carousel-track .carousel-art{display:flex;text-decoration:none}
+.blog-carousel-track .card-body{flex:1}
+.blog-carousel-track .card-body p{line-height:1.65;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden}
+.blog-carousel-track .card-body>a{line-height:1.4}
+@media(max-width:900px){.blog-carousel-track{grid-auto-columns:calc((100% - 18px)/2)}}
+@media(max-width:600px){.blog-carousel-track{grid-auto-columns:minmax(0,84%);gap:14px}.carousel-arrow{width:40px;height:40px}}
+@media(prefers-reduced-motion:reduce){.blog-carousel-track{scroll-behavior:auto}}
