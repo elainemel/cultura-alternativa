@@ -265,3 +265,13 @@ section{scroll-margin-top:88px}.documentary{overflow:hidden}.doc-grid>div{min-wi
 .signup-visual{background:#120a1b;border:1px solid #50376b;border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:16px}
 .signup-visual img{width:100%;max-height:780px;height:100%;object-fit:contain;border-radius:8px}
 @media(max-width:760px){.signup-layout{grid-template-columns:1fr}.signup-visual img{height:auto;max-height:620px}.pilot-thumb{width:100%;flex-basis:100%;margin-top:10px}.pilot-thumb img{width:200px;height:113px}}
+
+/* Redes sociais do projeto Vozes da Noite */
+.social-links{display:flex;align-items:center;gap:9px;flex-shrink:0}
+.social-links a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border:1px solid #58436e;border-radius:50%;color:#d9c8ec;text-decoration:none;background:#24172e;transition:background .2s,color .2s,border-color .2s}
+.social-links svg{display:block;width:18px;height:18px}
+.social-links a:hover,.social-links a:focus-visible{background:#6a339b;border-color:#bc8cff;color:#fff}
+.footer .social-links{margin-left:auto}
+@media(max-width:1120px){.nav{flex-wrap:wrap;justify-content:center;gap:12px;padding-top:14px;padding-bottom:14px}.nav .links{justify-content:center}.nav .social-links{margin-left:8px}}
+@media(max-width:700px){.nav .social-links{width:100%;justify-content:center;margin:0}.nav .social-links a{width:38px;height:38px}.footer .social-links{margin-left:0;width:100%;justify-content:center}}
+@media(prefers-reduced-motion:reduce){.social-links a{transition:none}}
