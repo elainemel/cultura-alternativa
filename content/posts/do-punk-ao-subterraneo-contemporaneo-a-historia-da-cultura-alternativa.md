@@ -11,7 +11,7 @@ description: >
   alternativo sempre significou pertencimento, liberdade estética e resistência
   ao padrão.
 image: /media/Design sem nome.png
-published: false
+published: true
 ---
 *Muito além de roupas pretas e guitarras distorcidas, entenda como a contracultura atravessou décadas como manifesto de identidade e como a cena de Franca mantém essa chama viva.*
 
