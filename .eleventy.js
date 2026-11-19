@@ -3,7 +3,7 @@ module.exports = function(eleventyConfig) {
 
   // Copiar paginas e recursos estaticos para _site.
   const publicFiles = [
-    "index.html", "galeria.html", "documentario.html", "sobre.html", "faca-parte.html",
+    "galeria.html", "documentario.html", "sobre.html", "faca-parte.html",
     "obrigado.html", "privacidade.html", "artigo-identidade.html",
     "styles.css", "banner-noctivivium.png", "cartaz-documentario.png",
     "banner-noctivivium.webp", "cartaz-documentario.webp"
