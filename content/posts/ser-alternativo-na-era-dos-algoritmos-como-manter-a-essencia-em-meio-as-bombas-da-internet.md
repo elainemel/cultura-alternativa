@@ -16,7 +16,7 @@ description: >-
   genuinamente alternativo sem se perder no barulho da internet — e, ao mesmo
   tempo, usar essa ferramenta poderosa a nosso favor? 
 image: /media/Design sem nome (1).png
-published: false
+published: true
 ---
 *Entre microtendências descartáveis, julgamentos virtuais e o excesso de informação: um guia prático de sobrevivência estética e mental  para quem vive a contracultura hoje.*
 
@@ -33,7 +33,6 @@ Nesse cenário de hiperconexão e ansiedade digital, como continuar sendo genuin
 As redes sociais transformaram subculturas inteiras em rótulos passageiros. Em uma semana, o algoritmo empurra uma estética sombria; na semana seguinte, descarta tudo em favor de outra moda. Esse ritmo frenético alimenta o fast fashion e cria a falsa sensação de que você precisa comprar roupas novas o tempo todo para "pertencer" à cena.
 
 Ser alternativo hoje começa por desacelerar: entender que estilo é construção de longo prazo, não fantasia descartável para ganhar curtidas.  
-
 
 2. Resgatar o Espírito DIY (Do It Yourself — Faça Você Mesmo)
 
@@ -80,7 +79,6 @@ No mundo físico, longe das telas, o olhar de reconhecimento na rua, a troca de 
 A Obsidian Style nasce justamente como um contraponto à pressa e à padronização digital, usando o meio on-line para aproximar quem vive a cena na prática. Em vez de seguir tendências descartáveis, o foco está na criação artesanal, na durabilidade e no fortalecimento da comunidade local.
 
 Cada choker, corset, corrente, patch ou pin produzido no ateliê é pensado para acompanhar a identidade real de quem o usa — seja no cotidiano, no trabalho ou na energia da noite. Somado a este blog colaborativo e aos projetos audiovisuais da marca, o objetivo é criar um refúgio autêntico onde a cena de Franca e região possa aprender, compartilhar referências e trocar experiências sem filtros.  
-
 
 **Como você mantém a sua essência no meio de tanto barulho?**
 
