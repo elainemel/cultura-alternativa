@@ -293,3 +293,17 @@ section{scroll-margin-top:88px}.documentary{overflow:hidden}.doc-grid>div{min-wi
 @media(max-width:900px){.blog-carousel-track{grid-auto-columns:calc((100% - 18px)/2)}}
 @media(max-width:600px){.blog-carousel-track{grid-auto-columns:minmax(0,84%);gap:14px}.carousel-arrow{width:40px;height:40px}}
 @media(prefers-reduced-motion:reduce){.blog-carousel-track{scroll-behavior:auto}}
+
+/* Aviso de concurso: cartão não modal, discreto e acessível */
+.contest-notice[hidden]{display:none!important}
+.contest-notice{position:fixed;z-index:50;right:clamp(14px,2.5vw,32px);bottom:clamp(14px,2.5vw,28px);width:min(350px,calc(100vw - 28px));padding:23px 22px 20px;border:1px solid #79519b;border-radius:14px;background:linear-gradient(145deg,#24142e,#100c18 85%);color:#f8f3fc;box-shadow:0 14px 55px #000b;box-sizing:border-box}
+.contest-notice-tag{color:#c59bf9;letter-spacing:.12em;text-transform:uppercase;font-size:10px;font-weight:800;padding-right:24px}
+.contest-notice h2{font-size:23px;line-height:1.2;margin:12px 20px 10px 0;letter-spacing:-.02em}
+.contest-notice p{font-size:13px;line-height:1.65;color:#dbd0e4;margin:0 0 17px}
+.contest-notice-close{position:absolute;right:11px;top:9px;width:38px;height:38px;display:grid;place-items:center;background:transparent;border:0;color:#e6d8ef;font-size:27px;cursor:pointer;border-radius:8px}
+.contest-notice-close:hover,.contest-notice-close:focus-visible{background:#523468;color:#fff}
+.contest-notice-link{display:inline-flex;align-items:center;justify-content:center;min-height:41px;padding:10px 15px;border-radius:6px;background:#7133b0;color:#fff;font-size:12px;font-weight:800;text-decoration:none}
+.contest-notice-link:hover,.contest-notice-link:focus-visible{background:#9149d4}
+.contest-notice-later{display:block;margin-top:12px;padding:6px 0;border:0;background:transparent;color:#c9b8d6;text-decoration:underline;text-underline-offset:3px;cursor:pointer;font-size:12px}
+.contest-notice :focus-visible{outline:2px solid #d7a8ff;outline-offset:3px}
+@media(max-width:480px){.contest-notice{right:12px;bottom:12px;width:calc(100vw - 24px);padding:18px}.contest-notice h2{font-size:20px}.contest-notice p{font-size:12px}}
